@@ -1,0 +1,4 @@
+Types in typescript:
+Number, String, Boolean, Null, Undefined, Void, Object, Array, Tuples, Any, Never, Unknown.
+
+Any: Turns off the type checking, the variable of type any can be assigned any datatype.
