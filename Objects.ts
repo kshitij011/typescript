@@ -35,3 +35,35 @@ function createUser2(user: User): User {
 }
 
 createUser2({ name: "Comp", email: "comp@gmail.com", isActive: true });
+
+// READONLY and optional(?)
+
+type Employee = {
+    readonly _id: string; // cannot be modified later on
+    name: string;
+    emial: string;
+    isActive: boolean;
+    hobby?: string;
+};
+
+// function createEmployee(u:  Employee){}
+
+// employee._id = "456";  // cannot be modified
+// employee.hobby = "playing";  // can be modified
+let employee: Employee = {
+    _id: "123",
+    name: "John",
+    emial: "john@gmail.com",
+    isActive: true,
+    hobby: "reading",
+};
+
+let employee2: Employee = {
+    _id: "123",
+    name: "Jack",
+    emial: "jack@gmail.com",
+    isActive: false,
+};
+
+// employee._id = "456";  // cannot be modified
+// employee.hobby = "playing";  // can be modified
