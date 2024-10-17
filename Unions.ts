@@ -14,6 +14,6 @@ type Admin = {
     id: number;
 };
 
-let user: User2 | Admin = { name: "Jhon", id: 123 };
+let UnionUser: User2 | Admin = { name: "Jhon", id: 123 };
 
-user = { username: "Jhon", id: 321 };
+UnionUser = { username: "Jhon", id: 321 };
